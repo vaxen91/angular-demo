@@ -1,0 +1,13 @@
+<hr>
+<h3>Esercizio 2</h3>
+<button class="btn btn-primary" (click)="onChangeStatus()">Display Details</button>
+<p *ngIf="hide">Secret Password = tuna</p>
+<p>Print click</p>
+<ul>
+  <li *ngFor="let click of clickNum; let i = index"
+      [ngStyle]="{backgroundColor: i >= 5 ? 'yellow' : 'transparent'}" >
+
+      {{ click }}
+  </li>
+</ul>
+

@@ -1,0 +1,7 @@
+<hr>
+<h3>Esercizio 1</h3>
+<label>Username</label>
+<input type="text" class="form-control" [(ngModel)]="username" (input)="onUpdateUsername($event)"/>
+<p>{{ username }}</p>
+<button class="btn btn-primary" [disabled]="!isUsernameEmpty" (click)="onCreateUser()" >Create user</button>
+<div class="alert alert-success" role="alert" *ngIf="userCreated">Utente {{ username }} creato con successo!</div>
